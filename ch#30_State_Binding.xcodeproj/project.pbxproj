@@ -12,6 +12,8 @@
 		9896F9F2296ECC220030AD17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9896F9F1296ECC220030AD17 /* Assets.xcassets */; };
 		9896F9F5296ECC220030AD17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9896F9F4296ECC220030AD17 /* Preview Assets.xcassets */; };
 		9896F9FC296ED2300030AD17 /* BeforeBedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9896F9FB296ED2300030AD17 /* BeforeBedView.swift */; };
+		9896F9FE296FA4C80030AD17 /* WeeklyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9896F9FD296FA4C80030AD17 /* WeeklyView.swift */; };
+		9896FA00296FA6310030AD17 /* MyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9896F9FF296FA6310030AD17 /* MyViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		9896F9F1296ECC220030AD17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9896F9F4296ECC220030AD17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9896F9FB296ED2300030AD17 /* BeforeBedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeBedView.swift; sourceTree = "<group>"; };
+		9896F9FD296FA4C80030AD17 /* WeeklyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyView.swift; sourceTree = "<group>"; };
+		9896F9FF296FA6310030AD17 /* MyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			children = (
 				9896F9ED296ECC200030AD17 /* ch_30_State_BindingApp.swift */,
 				9896F9EF296ECC200030AD17 /* ContentView.swift */,
+				9896F9FF296FA6310030AD17 /* MyViewModel.swift */,
 				9896F9FB296ED2300030AD17 /* BeforeBedView.swift */,
+				9896F9FD296FA4C80030AD17 /* WeeklyView.swift */,
 				9896F9F1296ECC220030AD17 /* Assets.xcassets */,
 				9896F9F3296ECC220030AD17 /* Preview Content */,
 			);
@@ -143,6 +149,8 @@
 				9896F9F0296ECC200030AD17 /* ContentView.swift in Sources */,
 				9896F9FC296ED2300030AD17 /* BeforeBedView.swift in Sources */,
 				9896F9EE296ECC200030AD17 /* ch_30_State_BindingApp.swift in Sources */,
+				9896F9FE296FA4C80030AD17 /* WeeklyView.swift in Sources */,
+				9896FA00296FA6310030AD17 /* MyViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,29 +1,31 @@
 //
-//  TodayView.swift
+//  WeeklyView.swift
 //  ch#30_State_Binding
 //
-//  Created by 비바 on 2023/01/11.
+//  Created by 비바 on 2023/01/12.
 //
 
 import SwiftUI
 
-struct BeforeBedView: View {
+struct WeeklyView: View {
+    
     @Binding var count: Int
     @EnvironmentObject var viewModel : MyViewModel
     @State var myTitle: String = ""
-    init(count: Binding<Int> = .constant(0)){
+    
+    init(count: Binding<Int> = .constant(99)){
         _count = count
     }
     var body: some View {
-        
+                
         VStack{
-            Text(myTitle)
-                .padding()
-                .foregroundColor(Color.blue)
+            Text(self.myTitle)
+                .font(.system(size: 30))
+                .foregroundColor(Color.orange)
             
-            Text("Befor bed View count:\(count)")
+            Text("WeeklyView count:\(count)")
                 .padding()
-            
+       
             
             Button(action: {
                 count += 1
@@ -32,7 +34,7 @@ struct BeforeBedView: View {
                 Text("counting")
                     .foregroundColor(Color.yellow)
                     .padding()
-                    .background(Color.blue)
+                    .background(Color.orange)
                     .cornerRadius(10.0)
             })
         }
@@ -41,11 +43,11 @@ struct BeforeBedView: View {
             myTitle = paramTitle
         })
     }
+    
 }
 
-struct BeforeBedView_Preview: PreviewProvider {
-    var count1 = 0
+struct WeeklyView_Previews: PreviewProvider {
     static var previews: some View {
-        BeforeBedView(count: .constant(1))
+        WeeklyView(count: .constant(2))
     }
 }
