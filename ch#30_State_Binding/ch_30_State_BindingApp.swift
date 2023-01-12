@@ -12,6 +12,7 @@ struct ch_30_State_BindingApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView(appTitle: "외부주입 타이틀").environmentObject(MyViewModel())
+            //MyGeometry_Vertical()
         }
     }
 }
