@@ -19,6 +19,8 @@ struct MyView: View {
                 .foregroundColor(Color.white)
                 .font(.system(size: 40))
                 .fontWeight(.black)
+           
+
         }
         
         

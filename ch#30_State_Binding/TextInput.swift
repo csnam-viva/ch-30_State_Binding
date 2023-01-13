@@ -10,11 +10,12 @@ import SwiftUI
 struct handleLogin
 {
     var username : String
-    var passwrd : String
+    var passwrd  : String
 }
 struct TextInputView: View {
     @State private var userInput : String = ""
     @State private var passwdInput: String = ""
+    
     var body: some View {
         VStack {
             HStack(spacing: 20) {
@@ -57,6 +58,9 @@ struct TextInputView: View {
                 }
              }
             Text("입력한 비번: \(passwdInput)")
+            
+            LoginDialog()
+            
 
         }
         .padding(.horizontal,50)
