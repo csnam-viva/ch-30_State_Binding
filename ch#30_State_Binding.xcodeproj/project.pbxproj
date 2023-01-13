@@ -28,6 +28,8 @@
 		98D96A972971569C00E97CF3 /* Z02MyRotateBtnStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D96A962971569C00E97CF3 /* Z02MyRotateBtnStyle.swift */; };
 		98D96A992971617900E97CF3 /* LoginDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D96A982971617900E97CF3 /* LoginDialog.swift */; };
 		98D96A9B2971644E00E97CF3 /* PresentStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D96A9A2971644E00E97CF3 /* PresentStyleView.swift */; };
+		98D96A9D2971860A00E97CF3 /* Z03PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D96A9C2971860A00E97CF3 /* Z03PickerView.swift */; };
+		98D96A9F29718A9700E97CF3 /* Z03_1PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D96A9E29718A9700E97CF3 /* Z03_1PickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		98D96A962971569C00E97CF3 /* Z02MyRotateBtnStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z02MyRotateBtnStyle.swift; sourceTree = "<group>"; };
 		98D96A982971617900E97CF3 /* LoginDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDialog.swift; sourceTree = "<group>"; };
 		98D96A9A2971644E00E97CF3 /* PresentStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentStyleView.swift; sourceTree = "<group>"; };
+		98D96A9C2971860A00E97CF3 /* Z03PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z03PickerView.swift; sourceTree = "<group>"; };
+		98D96A9E29718A9700E97CF3 /* Z03_1PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z03_1PickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				98D96A9229714BE800E97CF3 /* Z01ButtonStyleView.swift */,
 				98D96A9429714EA900E97CF3 /* Z02MyBtnStyle.swift */,
 				98D96A962971569C00E97CF3 /* Z02MyRotateBtnStyle.swift */,
+				98D96A9C2971860A00E97CF3 /* Z03PickerView.swift */,
+				98D96A9E29718A9700E97CF3 /* Z03_1PickerView.swift */,
 			);
 			path = "ch#30_State_Binding";
 			sourceTree = "<group>";
@@ -196,7 +202,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98D96A9D2971860A00E97CF3 /* Z03PickerView.swift in Sources */,
 				9896F9F0296ECC200030AD17 /* ContentView.swift in Sources */,
+				98D96A9F29718A9700E97CF3 /* Z03_1PickerView.swift in Sources */,
 				98D96A8A2970297D00E97CF3 /* TextInput.swift in Sources */,
 				98D96A8429700F6300E97CF3 /* CustomView.swift in Sources */,
 				98D96A9329714BE800E97CF3 /* Z01ButtonStyleView.swift in Sources */,
