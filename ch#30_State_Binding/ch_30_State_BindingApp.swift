@@ -18,7 +18,9 @@ struct ch_30_State_BindingApp: App {
             //ThreadTest().environmentObject(BackgroundViewModel())
             
             //MyGeometry_Vertical()
-            TextInputView()
+            //TextInputView()
+            
+            Z21_DeepLingViewJung()
         }
     }
 }

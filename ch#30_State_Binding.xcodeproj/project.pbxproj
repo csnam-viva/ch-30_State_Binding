@@ -30,6 +30,11 @@
 		98D96A9B2971644E00E97CF3 /* PresentStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D96A9A2971644E00E97CF3 /* PresentStyleView.swift */; };
 		98D96A9D2971860A00E97CF3 /* Z03PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D96A9C2971860A00E97CF3 /* Z03PickerView.swift */; };
 		98D96A9F29718A9700E97CF3 /* Z03_1PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D96A9E29718A9700E97CF3 /* Z03_1PickerView.swift */; };
+		98D96AA12974F93400E97CF3 /* Z21_DeepLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D96AA02974F93400E97CF3 /* Z21_DeepLinkView.swift */; };
+		98D96AA42974FDE400E97CF3 /* Z21_ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D96AA32974FDE400E97CF3 /* Z21_ProfileView.swift */; };
+		98D96AA62975110500E97CF3 /* Z21_DeepLingViewJung.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D96AA52975110500E97CF3 /* Z21_DeepLingViewJung.swift */; };
+		98D96AA92975128F00E97CF3 /* Z21_TodosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D96AA82975128F00E97CF3 /* Z21_TodosView.swift */; };
+		98D96AAC2975326F00E97CF3 /* Z22_NenubarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D96AAB2975326F00E97CF3 /* Z22_NenubarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +62,12 @@
 		98D96A9A2971644E00E97CF3 /* PresentStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentStyleView.swift; sourceTree = "<group>"; };
 		98D96A9C2971860A00E97CF3 /* Z03PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z03PickerView.swift; sourceTree = "<group>"; };
 		98D96A9E29718A9700E97CF3 /* Z03_1PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z03_1PickerView.swift; sourceTree = "<group>"; };
+		98D96AA02974F93400E97CF3 /* Z21_DeepLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z21_DeepLinkView.swift; sourceTree = "<group>"; };
+		98D96AA32974FDE400E97CF3 /* Z21_ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z21_ProfileView.swift; sourceTree = "<group>"; };
+		98D96AA52975110500E97CF3 /* Z21_DeepLingViewJung.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z21_DeepLingViewJung.swift; sourceTree = "<group>"; };
+		98D96AA7297511AD00E97CF3 /* ch-30-State-Binding-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ch-30-State-Binding-Info.plist"; sourceTree = SOURCE_ROOT; };
+		98D96AA82975128F00E97CF3 /* Z21_TodosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z21_TodosView.swift; sourceTree = "<group>"; };
+		98D96AAB2975326F00E97CF3 /* Z22_NenubarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z22_NenubarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +100,9 @@
 		9896F9EC296ECC200030AD17 /* ch#30_State_Binding */ = {
 			isa = PBXGroup;
 			children = (
+				98D96AA7297511AD00E97CF3 /* ch-30-State-Binding-Info.plist */,
+				98D96AAA2975322400E97CF3 /* Z22_MenuBarView */,
+				98D96AA22974FD9E00E97CF3 /* Z21_DeepLink */,
 				98D96A8B2970E96F00E97CF3 /* inflean */,
 				9896F9ED296ECC200030AD17 /* ch_30_State_BindingApp.swift */,
 				9896F9EF296ECC200030AD17 /* ContentView.swift */,
@@ -130,6 +144,25 @@
 				98D96A8E2971213300E97CF3 /* Closure_study.swift */,
 			);
 			path = inflean;
+			sourceTree = "<group>";
+		};
+		98D96AA22974FD9E00E97CF3 /* Z21_DeepLink */ = {
+			isa = PBXGroup;
+			children = (
+				98D96AA02974F93400E97CF3 /* Z21_DeepLinkView.swift */,
+				98D96AA52975110500E97CF3 /* Z21_DeepLingViewJung.swift */,
+				98D96AA82975128F00E97CF3 /* Z21_TodosView.swift */,
+				98D96AA32974FDE400E97CF3 /* Z21_ProfileView.swift */,
+			);
+			path = Z21_DeepLink;
+			sourceTree = "<group>";
+		};
+		98D96AAA2975322400E97CF3 /* Z22_MenuBarView */ = {
+			isa = PBXGroup;
+			children = (
+				98D96AAB2975326F00E97CF3 /* Z22_NenubarView.swift */,
+			);
+			path = Z22_MenuBarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,13 +246,18 @@
 				98D96A9529714EA900E97CF3 /* Z02MyBtnStyle.swift in Sources */,
 				9896F9FC296ED2300030AD17 /* BeforeBedView.swift in Sources */,
 				98D96A8D2970E9A700E97CF3 /* Closur04.swift in Sources */,
+				98D96AAC2975326F00E97CF3 /* Z22_NenubarView.swift in Sources */,
 				98D96A8F2971213300E97CF3 /* Closure_study.swift in Sources */,
 				9896F9EE296ECC200030AD17 /* ch_30_State_BindingApp.swift in Sources */,
 				98D96A972971569C00E97CF3 /* Z02MyRotateBtnStyle.swift in Sources */,
 				98D96A992971617900E97CF3 /* LoginDialog.swift in Sources */,
 				9896FA04296FD5E30030AD17 /* MyGeometry_Vertical.swift in Sources */,
+				98D96AA62975110500E97CF3 /* Z21_DeepLingViewJung.swift in Sources */,
+				98D96AA42974FDE400E97CF3 /* Z21_ProfileView.swift in Sources */,
 				98D96A91297124D800E97CF3 /* ThreadTest.swift in Sources */,
 				9896FA02296FCD1D0030AD17 /* MyGeometry.swift in Sources */,
+				98D96AA92975128F00E97CF3 /* Z21_TodosView.swift in Sources */,
+				98D96AA12974F93400E97CF3 /* Z21_DeepLinkView.swift in Sources */,
 				98D96A862970188F00E97CF3 /* CustomViewMy.swift in Sources */,
 				9896F9FE296FA4C80030AD17 /* WeeklyView.swift in Sources */,
 				9896FA00296FA6310030AD17 /* MyViewModel.swift in Sources */,
@@ -354,6 +392,7 @@
 				DEVELOPMENT_TEAM = 9YQ9QH28X9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ch-30-State-Binding-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -383,6 +422,7 @@
 				DEVELOPMENT_TEAM = 9YQ9QH28X9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ch-30-State-Binding-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
