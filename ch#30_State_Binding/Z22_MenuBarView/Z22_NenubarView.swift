@@ -7,43 +7,72 @@
 
 import SwiftUI
 
+let myPets =  ["멍멍이 🐻‍❄️", "토끼 🐰", "여우 🦊"]
+
 struct Z22_NenubarView: View {
     
     @State private var isShowing = false
+    @State private var myText : String = ""
+    
+    @State private var selected : Int = 0
     var body: some View {
         
         let trailingItem = Button {
             print("aa")
-            self.isShowing = true
+            //self.isShowing = true
+            //myText = "오늘도 파이팅"
+            
         } label: {
             Image(systemName: "bell").imageScale(.large)
         }
-            .alert(isPresented: $isShowing){
-                Alert(
-                    title: Text("제목"),
-                    message: Text("내용"),
-                    primaryButton: .default(Text("확인"),action: {}),
-                    secondaryButton: .cancel(Text("취소"))
-                )
-            }
+           
         
         NavigationView{
-          
-            Text("Hello")
+            VStack{
+                Spacer()
+                Text("\(myPets[selected])")
+                    .font(.system(size: 40))
+                Text("오른쪽상단 클릭")
+                Spacer()
+            }
+            //Text("Hello")
                 .navigationTitle("안녕")
                 .toolbar {
                     ToolbarItem(
                         placement: .navigationBarTrailing ,//.primaryAction,
                         content: {
                         Menu(content: {
-                            
-                            
-                            Text("menu 1")
-                            Text("menu 1")
-                            Text("menu 1")
-                            
-                            
-                            
+                            Button {
+                                isShowing = true
+                                myText = "오늘도 파이팅"
+
+                            } label: {
+                                Label("menu1",systemImage: "flame.fill")
+                            }
+                           
+                            Button {
+                                isShowing = true
+                                myText = "오늘도 파이팅2"
+
+                            } label: {
+                                Label("menu2",systemImage: "house.fill")
+                            }
+                            Section{
+                                
+                                Button {
+                                    isShowing = true
+                                    myText = "오늘도 파이팅3"
+
+                                } label: {
+                                    Label("menu3",systemImage: "house.fill")
+                                }
+                            }
+                            Picker(selection: $selected, label: Text("동물선택")){
+                                ForEach(myPets.indices, id: \.self){ idx in
+                                    Text(myPets[idx]).tag(idx)
+                                }
+                            }
+    
                         },label: {
                             Circle().foregroundColor(Color.green)
                                 .frame(width: 50,height: 50)
@@ -53,6 +82,19 @@ struct Z22_NenubarView: View {
                             
                         })
                     })
+                }
+                .alert(isPresented: $isShowing){
+//                    Alert(
+//                        title: Text("제목"),
+//                        message: Text("내용"),
+//                        primaryButton: .default(Text("확인"),action: {}),
+//                        secondaryButton: .cancel(Text("취소"))
+//                    )
+                    Alert(
+                        title: Text("제목"),
+                        message: Text("내용"),
+                        dismissButton: .default(Text("확인"))
+                    )
                 }
                
                 //.navigationBarItems(trailing: trailingItem)
