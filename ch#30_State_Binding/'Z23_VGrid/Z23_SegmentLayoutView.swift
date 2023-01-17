@@ -78,14 +78,28 @@ struct Z23_SegmentLayoutView: View {
                         }/*@END_MENU_TOKEN@*/)
                         .frame(width: 250)
                         .pickerStyle(SegmentedPickerStyle())
+                
             ScrollView{
                 LazyVGrid(columns: selectedLayoutType.colums) {
                     ForEach(dummyDataArray){ dataItem in
-                        Rectangle().foregroundColor(.blue)
-                            .frame(height: 100)
+                        switch selectedLayoutType {
+                        case .table:
+                            Rectangle().foregroundColor(.blue)
+                                .frame(height: 100)
+                        case .grid:
+                            Rectangle().foregroundColor(.red)
+                                .frame(height: 100)
+                        case .triple:
+                            Rectangle().foregroundColor(.green)
+                                .frame(height: 100)
+                            
+                        }
+                       
                     }
                     
                 }
+                .animation(.easeOut)
+                .padding(.horizontal,10)
                 
             }
 

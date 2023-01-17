@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		982FC2FC2976C21B00C45AD7 /* Z23_SegmentLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982FC2FB2976C21B00C45AD7 /* Z23_SegmentLayoutView.swift */; };
+		982FC2FE2976CDC700C45AD7 /* Z23_MyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982FC2FD2976CDC700C45AD7 /* Z23_MyCard.swift */; };
 		9896F9EE296ECC200030AD17 /* ch_30_State_BindingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9896F9ED296ECC200030AD17 /* ch_30_State_BindingApp.swift */; };
 		9896F9F0296ECC200030AD17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9896F9EF296ECC200030AD17 /* ContentView.swift */; };
 		9896F9F2296ECC220030AD17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9896F9F1296ECC220030AD17 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		982FC2FB2976C21B00C45AD7 /* Z23_SegmentLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z23_SegmentLayoutView.swift; sourceTree = "<group>"; };
+		982FC2FD2976CDC700C45AD7 /* Z23_MyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z23_MyCard.swift; sourceTree = "<group>"; };
 		9896F9EA296ECC200030AD17 /* ch#30_State_Binding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ch#30_State_Binding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9896F9ED296ECC200030AD17 /* ch_30_State_BindingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ch_30_State_BindingApp.swift; sourceTree = "<group>"; };
 		9896F9EF296ECC200030AD17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				98D96AB22975752300E97CF3 /* Z23_OneView.swift */,
 				98D96AB4297577FC00E97CF3 /* Z23_FourView.swift */,
 				982FC2FB2976C21B00C45AD7 /* Z23_SegmentLayoutView.swift */,
+				982FC2FD2976CDC700C45AD7 /* Z23_MyCard.swift */,
 			);
 			path = "'Z23_VGrid";
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				98D96A9329714BE800E97CF3 /* Z01ButtonStyleView.swift in Sources */,
 				98D96A882970198E00E97CF3 /* MyView.swift in Sources */,
 				98D96A9B2971644E00E97CF3 /* PresentStyleView.swift in Sources */,
+				982FC2FE2976CDC700C45AD7 /* Z23_MyCard.swift in Sources */,
 				98D96A9529714EA900E97CF3 /* Z02MyBtnStyle.swift in Sources */,
 				9896F9FC296ED2300030AD17 /* BeforeBedView.swift in Sources */,
 				98D96A8D2970E9A700E97CF3 /* Closur04.swift in Sources */,
