@@ -32,7 +32,7 @@ struct MyGeometry_Vertical: View {
                         .frame(width: 100, height: geo.size.height / 3)
                         .padding(.horizontal,self.index == .one ? 50 : 0 )
                         .background(Color.green)
-                        .foregroundColor(Color.white)
+                        //.foregroundColor(Color.white)
                       
                         
                 }
@@ -47,7 +47,8 @@ struct MyGeometry_Vertical: View {
                         .padding(.horizontal, self.index == .two ? 50 : 0 )
                         .background(Color.yellow)
                         .font(.largeTitle)
-                        .fontWeight(.ultraLight)
+                    
+                        //.fontWeight(.ultraLight)
                 }
                 
                 Button(action: {
@@ -62,7 +63,7 @@ struct MyGeometry_Vertical: View {
                         .padding(.horizontal, self.index == .three ? 50 : 0 )
                         .background(Color.blue)
                         .font(.largeTitle)
-                        .fontWeight(.ultraLight)
+                        //.fontWeight(.ultraLight)
                 }
                
                

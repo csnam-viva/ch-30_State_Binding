@@ -23,7 +23,7 @@ struct MyGeometry: View {
                             .frame(width: geometry.size.width / 4)
                             .background(Color.green)
                             .font(.largeTitle)
-                            .fontWeight(.ultraLight)
+                            //.fontWeight(.ultraLight)
                     }
                     
                 }

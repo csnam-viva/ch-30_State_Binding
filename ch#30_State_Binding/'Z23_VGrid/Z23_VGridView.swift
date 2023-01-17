@@ -17,7 +17,7 @@ struct MyModel2 : Identifiable{
     var title : String
     var content : String
 }
-
+//https://gyuios.tistory.com/168
 extension MyModel2{
     static var dummyDataArray : [MyModel2] {
         (1...200).map { num  in
@@ -31,32 +31,61 @@ struct Z23_VGridView: View {
     @State private var selectedTab = ShapeSelector.line
     
     var dummyDataArray = MyModel.dummyDataArray
+    var count = 0
     
-   
     var body: some View {
         VStack {
             Picker("", selection: $selectedTab,
                    content: {
                 
-                Image(systemName: "list.bullet")
-                Image(systemName: "rectangle.split.2x2.fill")
-                Image(systemName: "rectangle.split.3x3.fill")
+                Image(systemName: "list.bullet").tag(ShapeSelector.line)
+                Image(systemName: "rectangle.split.2x2.fill").tag(ShapeSelector.circle)
+                Image(systemName: "rectangle.split.3x3.fill").tag(ShapeSelector.rectangle)
                 
                 
             }).pickerStyle(SegmentedPickerStyle())
-            ScrollView()  {
-                LazyVGrid(columns: [GridItem(.fixed(400))]) {
-                    
-                    
-                    ForEach(dummyDataArray.indices) { array in
+            
+            ScrollView {
+                if selectedTab == ShapeSelector.line {
+                    LazyVGrid(columns:  [GridItem(.fixed(400))]  ) {
                         
-                        Z23_OneView()
+                        ForEach(dummyDataArray.indices) { array in
+                            Z23_OneView()
+                        }
+                    }
+                }
+//                else if selectedTab == ShapeSelector.circle {
+ //                  LazyVGrid(columns:  [GridItem(),GridItem()]  ) {
+//                        print("aa")
+//                        ForEach(Array(zip(dummyDataArray.indices,dummyDataArray))) { idx, item  in
+//                            Z23_FourView(count: idx )
+//                        }
+//                        for (idx) in dummyDataArray.indices{
+//                            Z23_FourView(count: idx )
+//                        }
+//                        ForEach(dummyDataArray.indices) { array in
+//                            Z23_FourView(count: array )
+//                        }
+//                        ForEach(dummyDataArray.indices,id: \.self) { idx in
+//                            self.count = self.count + 1
+//                            Z23_FourView(count: self.count)
+//                        }
+//                    }
+//                }
+                else if selectedTab == ShapeSelector.rectangle {
+                    LazyVGrid(columns:  [GridItem(.fixed(100)),GridItem(.fixed(100))] ) {
+                        
+                        ForEach(dummyDataArray.indices,id: \.self) { array in
+                            Rectangle().foregroundColor(.black)
+                                .frame(height: 100)
+                        }
                     }
                 }
             }
-        }
             
-        
+            
+            
+        } //vstack
     }
 }
 

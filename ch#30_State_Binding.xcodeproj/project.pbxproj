@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		982FC2FC2976C21B00C45AD7 /* Z23_SegmentLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982FC2FB2976C21B00C45AD7 /* Z23_SegmentLayoutView.swift */; };
 		9896F9EE296ECC200030AD17 /* ch_30_State_BindingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9896F9ED296ECC200030AD17 /* ch_30_State_BindingApp.swift */; };
 		9896F9F0296ECC200030AD17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9896F9EF296ECC200030AD17 /* ContentView.swift */; };
 		9896F9F2296ECC220030AD17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9896F9F1296ECC220030AD17 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		982FC2FB2976C21B00C45AD7 /* Z23_SegmentLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z23_SegmentLayoutView.swift; sourceTree = "<group>"; };
 		9896F9EA296ECC200030AD17 /* ch#30_State_Binding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ch#30_State_Binding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9896F9ED296ECC200030AD17 /* ch_30_State_BindingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ch_30_State_BindingApp.swift; sourceTree = "<group>"; };
 		9896F9EF296ECC200030AD17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				98D96AAE29755A7700E97CF3 /* Z23_VGridView.swift */,
 				98D96AB22975752300E97CF3 /* Z23_OneView.swift */,
 				98D96AB4297577FC00E97CF3 /* Z23_FourView.swift */,
+				982FC2FB2976C21B00C45AD7 /* Z23_SegmentLayoutView.swift */,
 			);
 			path = "'Z23_VGrid";
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				98D96A8D2970E9A700E97CF3 /* Closur04.swift in Sources */,
 				98D96AAC2975326F00E97CF3 /* Z22_NenubarView.swift in Sources */,
 				98D96A8F2971213300E97CF3 /* Closure_study.swift in Sources */,
+				982FC2FC2976C21B00C45AD7 /* Z23_SegmentLayoutView.swift in Sources */,
 				9896F9EE296ECC200030AD17 /* ch_30_State_BindingApp.swift in Sources */,
 				98D96A972971569C00E97CF3 /* Z02MyRotateBtnStyle.swift in Sources */,
 				98D96AB5297577FC00E97CF3 /* Z23_FourView.swift in Sources */,
@@ -422,6 +426,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,6 +457,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

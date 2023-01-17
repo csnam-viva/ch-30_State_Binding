@@ -8,6 +8,15 @@
 import SwiftUI
 
 struct Z23_FourView: View {
+    
+    @Binding var count: Int
+    init ( count: Binding<Int> = .constant(0)){
+        _count = count
+    }
+//    @State var nOrder: Int = 0
+//    init (count: Int){
+//        self.nOrder = count
+//    }
     var body: some View {
         
         Rectangle()
@@ -18,10 +27,11 @@ struct Z23_FourView: View {
             .overlay(
                 VStack {
                     Circle().frame(width: 30,height: 30)
-                    Text("타이틀").foregroundColor(.white)
+                    Text("타이틀: \(count)").foregroundColor(.white)
                            .font(.system(size: 10))
-                    Text("서브타이틀").foregroundColor(.white)
+                    Text("서브타이틀:\(count)").foregroundColor(.white)
                            .font(.system(size: 10))
+                    
                 }
             )
             
@@ -30,6 +40,6 @@ struct Z23_FourView: View {
 
 struct Z23_FourView_Previews: PreviewProvider {
     static var previews: some View {
-        Z23_FourView()
+        Z23_FourView(count: .constant(0))
     }
 }
