@@ -9,10 +9,13 @@ import SwiftUI
 
 struct Z23_FourView: View {
     
-    @Binding var count: Int
-    init ( count: Binding<Int> = .constant(0)){
-        _count = count
-    }
+    var title : String
+    var content : String
+    
+//    @Binding var count: Int
+//    init ( count: Binding<Int> = .constant(0)){
+//        _count = count
+//    }
 //    @State var nOrder: Int = 0
 //    init (count: Int){
 //        self.nOrder = count
@@ -27,11 +30,14 @@ struct Z23_FourView: View {
             .overlay(
                 VStack {
                     Circle().frame(width: 30,height: 30)
-                    Text("타이틀: \(count)").foregroundColor(.white)
+                    Text("\(title)").foregroundColor(.white)
                            .font(.system(size: 10))
-                    Text("서브타이틀:\(count)").foregroundColor(.white)
+                    Text("\(content)").foregroundColor(.white)
                            .font(.system(size: 10))
-                    
+//                    Text("타이틀: \(count)").foregroundColor(.white)
+//                           .font(.system(size: 10))
+//                    Text("서브타이틀:\(count)").foregroundColor(.white)
+//                           .font(.system(size: 10))
                 }
             )
             
@@ -40,6 +46,7 @@ struct Z23_FourView: View {
 
 struct Z23_FourView_Previews: PreviewProvider {
     static var previews: some View {
-        Z23_FourView(count: .constant(0))
+        //Z23_FourView(count: .constant(0))
+        Z23_FourView(title: "title", content: "content")
     }
 }

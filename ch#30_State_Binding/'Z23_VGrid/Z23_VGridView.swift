@@ -54,6 +54,14 @@ struct Z23_VGridView: View {
                         }
                     }
                 }
+                else if (selectedTab == ShapeSelector.circle)
+                {
+                    LazyVGrid(columns:  [GridItem(),GridItem()]  ) {
+                        ForEach(dummyDataArray) { arrayItem in
+                            Z23_FourView(title: arrayItem.title, content: arrayItem.content )
+                        }
+                    }
+                }
 //                else if selectedTab == ShapeSelector.circle {
  //                  LazyVGrid(columns:  [GridItem(),GridItem()]  ) {
 //                        print("aa")

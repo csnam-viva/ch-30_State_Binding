@@ -84,11 +84,26 @@ struct Z23_SegmentLayoutView: View {
                     ForEach(dummyDataArray){ dataItem in
                         switch selectedLayoutType {
                         case .table:
-                            Rectangle().foregroundColor(.blue)
-                                .frame(height: 100)
+                          Z23_MyCard( icon: "book.fill", title: "책읽기", start: "1 PM", end: "3 PM", bgColor: Color.green)
+                          //  Rectangle().foregroundColor(.blue)
+                          //      .frame(height: 100)
                         case .grid:
-                            Rectangle().foregroundColor(.red)
-                                .frame(height: 100)
+                            //Rectangle().foregroundColor(.red)
+                            //    .frame(height: 100)
+                            RoundedRectangle(cornerRadius: 25.0)
+                                .foregroundColor(Color.orange)
+                                .frame(height: 200)
+                                .overlay{
+                                    VStack{
+                                        Circle().frame(height: 100)
+                                            .foregroundColor(Color.yellow)
+                                       // Circle().frame(height: 100)
+                                        Text("\(dataItem.title)")
+                                            .fontWeight(.bold)
+                                        Text("\(dataItem.content)")
+                                    }
+                                }
+                        
                         case .triple:
                             Rectangle().foregroundColor(.green)
                                 .frame(height: 100)
